@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S Nikhil on Tushar SEMWAL</title>
+    <link>https://tushar-semwal.github.io/authors/s-nikhil/</link>
+    <description>Recent content in S Nikhil on Tushar SEMWAL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tushar-semwal.github.io/authors/s-nikhil/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Immuno-inspired behaviour adaptation in Multi-Robot Systems</title>
+      <link>https://tushar-semwal.github.io/publication/nikhil-2016-immuno/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/nikhil-2016-immuno/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TARTARUS: A Multi-Agent Platform for Bridging the Gap between Cyber and Physical Systems (Demonstration)</title>
+      <link>https://tushar-semwal.github.io/publication/semwal-2016-tartarus/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/semwal-2016-tartarus/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

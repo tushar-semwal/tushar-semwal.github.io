@@ -7,17 +7,107 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
-    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tushar-semwal.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>*Tushar Semwal*</title>
+      <title>Divya D Kulkarni</title>
+      <link>https://tushar-semwal.github.io/authors/divya-d-kulkarni/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/divya-d-kulkarni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaurav Mathur</title>
+      <link>https://tushar-semwal.github.io/authors/gaurav-mathur/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/gaurav-mathur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Promod Yenigalla</title>
+      <link>https://tushar-semwal.github.io/authors/promod-yenigalla/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/promod-yenigalla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rahul Shivnarayan Mishra</title>
+      <link>https://tushar-semwal.github.io/authors/rahul-shivnarayan-mishra/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/rahul-shivnarayan-mishra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shivashankar B Nair</title>
+      <link>https://tushar-semwal.github.io/authors/shivashankar-b-nair/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/shivashankar-b-nair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tushar Semwal</title>
       <link>https://tushar-semwal.github.io/authors/tushar-semwal/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://tushar-semwal.github.io/authors/tushar-semwal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shashi Shekhar Jha</title>
+      <link>https://tushar-semwal.github.io/authors/shashi-shekhar-jha/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/shashi-shekhar-jha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shivashankar B. Nair</title>
+      <link>https://tushar-semwal.github.io/authors/shivashankar-b.-nair/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/shivashankar-b.-nair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nitu Gangwar</title>
+      <link>https://tushar-semwal.github.io/authors/nitu-gangwar/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/nitu-gangwar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S Nikhil</title>
+      <link>https://tushar-semwal.github.io/authors/s-nikhil/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/s-nikhil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shivashankar Bhaskaran Nair</title>
+      <link>https://tushar-semwal.github.io/authors/shivashankar-bhaskaran-nair/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/authors/shivashankar-bhaskaran-nair/</guid>
       <description></description>
     </item>
     
@@ -27,24 +117,6 @@
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://tushar-semwal.github.io/authors/manoj-bode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shashi Shekhar Jha</title>
-      <link>https://tushar-semwal.github.io/authors/shashi-shekhar-jha/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://tushar-semwal.github.io/authors/shashi-shekhar-jha/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shivashankar B Nair</title>
-      <link>https://tushar-semwal.github.io/authors/shivashankar-b-nair/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://tushar-semwal.github.io/authors/shivashankar-b-nair/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shivashankar Bhaskaran Nair on Tushar SEMWAL</title>
+    <link>https://tushar-semwal.github.io/authors/shivashankar-bhaskaran-nair/</link>
+    <description>Recent content in Shivashankar Bhaskaran Nair on Tushar SEMWAL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tushar-semwal.github.io/authors/shivashankar-bhaskaran-nair/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AgPi: Agents on Raspberry Pi</title>
+      <link>https://tushar-semwal.github.io/publication/electronics-5040072/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/electronics-5040072/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

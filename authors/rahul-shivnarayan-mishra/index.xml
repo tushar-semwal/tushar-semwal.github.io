@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rahul Shivnarayan Mishra on Tushar SEMWAL</title>
+    <link>https://tushar-semwal.github.io/authors/rahul-shivnarayan-mishra/</link>
+    <description>Recent content in Rahul Shivnarayan Mishra on Tushar SEMWAL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tushar-semwal.github.io/authors/rahul-shivnarayan-mishra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Distributed Epigenetic Shape Formation and Regeneration Algorithm for a Swarm of Robots</title>
+      <link>https://tushar-semwal.github.io/publication/mishra-2018-distributed/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/mishra-2018-distributed/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
