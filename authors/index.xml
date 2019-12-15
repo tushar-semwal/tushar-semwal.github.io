@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Tushar SEMWAL</title>
+    <title>Authors on Tushar Semwal</title>
     <link>https://tushar-semwal.github.io/authors/</link>
-    <description>Recent content in Authors on Tushar SEMWAL</description>
+    <description>Recent content in Authors on Tushar Semwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
@@ -145,7 +145,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tushar-semwal.github.io/authors/tushar/</guid>
-      <description>I am Tushar, currently a post-doctoral research associate at the The Univeristy of Edinburgh. I am working with Dr. Adam A. Stokes on sensing and data science solutions for the Oil &amp;amp; Gas industries under the ORCA (Offshore Robotics for Certification of Assets) project. My research area lies at the junction of machine learning, robotics, internet of things, and decenentralisation. Recently, I have picked up an interest on applying Transfer Learning and Federated Computing across industrial IoT applications.</description>
+      <description>I am Tushar, currently a post-doctoral research associate at the The University of Edinburgh. I am working with Dr. Adam A. Stokes on sensing and data science solutions for the Oil &amp;amp; Gas industries under the ORCA (Offshore Robotics for Certification of Assets) project. My research area lies at the junction of machine learning, robotics, internet of things, and decenentralisation. Recently, I have picked up an interest on applying Transfer Learning and Federated Computing across industrial IoT applications.</description>
     </item>
     
   </channel>
