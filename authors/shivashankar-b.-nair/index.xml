@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
-    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tushar-semwal.github.io/authors/shivashankar-b.-nair/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A decentralized Artificial Immune System for solution selection in Cyber–Physical Systems</title>
+      <link>https://tushar-semwal.github.io/publication/semwal-2020105920/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/semwal-2020105920/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>On Ordering Multi-Robot Task Executions Within a Cyber Physical System</title>
@@ -18,6 +27,15 @@
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://tushar-semwal.github.io/publication/semwal-2017-omt-3155314-3124677/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tartarus: A Multi-Agent Platform for Integrating Cyber-Physical Systems and Robots</title>
+      <link>https://tushar-semwal.github.io/publication/10-1145-2783449-2783469/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/10-1145-2783449-2783469/</guid>
       <description></description>
     </item>
     

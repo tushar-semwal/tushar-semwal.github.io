@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile agents;security of data on Tushar Semwal</title>
+    <link>https://tushar-semwal.github.io/tags/mobile-agentssecurity-of-data/</link>
+    <description>Recent content in mobile agents;security of data on Tushar Semwal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tushar-semwal.github.io/tags/mobile-agentssecurity-of-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On Securing Mobile Agents using Blockchain Technology</title>
+      <link>https://tushar-semwal.github.io/publication/8882907/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/8882907/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

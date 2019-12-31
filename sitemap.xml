@@ -3,6 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tushar-semwal.github.io/publication_types/2/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/publication/semwal-2020105920/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/artificial-immune-system/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/decentralized-and-distributed-system/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/immune-network/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/publication_types/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/self-adaptive/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/shivashankar-b.-nair/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/tushar-semwal/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://tushar-semwal.github.io/project/</loc>
     <lastmod>2019-05-19T18:58:15+01:00</lastmod>
     <priority>0</priority>
@@ -11,18 +82,6 @@
   <url>
     <loc>https://tushar-semwal.github.io/project/ros-firebirdv/</loc>
     <lastmod>2019-05-19T18:58:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/tags/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -60,31 +119,54 @@
   </url>
   
   <url>
-    <loc>https://tushar-semwal.github.io/authors/tushar-semwal/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <loc>https://tushar-semwal.github.io/publication_types/1/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://tushar-semwal.github.io/publication_types/1/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <loc>https://tushar-semwal.github.io/authors/d.-kulkarni/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/i.-ishita/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/publication/8882907/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/s.-b.-nair/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/authors/t.-semwal/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/mobile-agentssecurity-of-data/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/publication/mishra-2018-distributed/</loc>
-    <lastmod>2019-05-19T18:58:15+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/publication/semwal-2018-practitioners/</loc>
-    <lastmod>2019-05-19T18:58:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/authors/</loc>
-    <lastmod>2019-12-31T12:18:03+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
   </url>
   
   <url>
@@ -95,7 +177,7 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/gaurav-mathur/</loc>
-    <lastmod>2019-05-19T18:58:15+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,66 +193,48 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/promod-yenigalla/</loc>
-    <lastmod>2019-05-19T18:58:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/publication_types/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/rahul-shivnarayan-mishra/</loc>
-    <lastmod>2019-05-19T18:58:15+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/shivashankar-b-nair/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/publication_types/2/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/tags/mutual-exclusion/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/publication/semwal-2017-omt-3155314-3124677/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/shashi-shekhar-jha/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/authors/shivashankar-b.-nair/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/tags/distributed-systems/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tushar-semwal.github.io/tags/multi-robot-systems-mrs/</loc>
-    <lastmod>2019-05-19T19:02:46+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -187,7 +251,7 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/publication/electronics-5040072/</loc>
-    <lastmod>2019-05-19T13:22:07+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
   </url>
   
   <url>
@@ -203,7 +267,7 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/shivashankar-bhaskaran-nair/</loc>
-    <lastmod>2019-05-19T13:22:07+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -214,8 +278,19 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/manoj-bode/</loc>
-    <lastmod>2019-05-19T13:22:07+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/swi-prolog/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/publication/10-1145-2783449-2783469/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
   </url>
   
   <url>
@@ -225,7 +300,31 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/authors/vivek-singh/</loc>
-    <lastmod>2019-05-19T13:22:07+01:00</lastmod>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/cyber-physical-systems-cps/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/mobile-agent/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/multi-agent-systems/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/networked-robots/</loc>
+    <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   

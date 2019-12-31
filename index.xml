@@ -7,10 +7,19 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
-    <lastBuildDate>Sun, 19 May 2019 18:36:30 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://tushar-semwal.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A decentralized Artificial Immune System for solution selection in Cyber–Physical Systems</title>
+      <link>https://tushar-semwal.github.io/publication/semwal-2020105920/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/semwal-2020105920/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ros Firebirdv</title>
@@ -36,6 +45,15 @@
       <pubDate>Tue, 12 Mar 2019 18:18:17 +0100</pubDate>
       
       <guid>https://tushar-semwal.github.io/project/arduino-firebirdv-extension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Securing Mobile Agents using Blockchain Technology</title>
+      <link>https://tushar-semwal.github.io/publication/8882907/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/8882907/</guid>
       <description></description>
     </item>
     
@@ -117,6 +135,15 @@
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://tushar-semwal.github.io/publication/semwal-2016-tartarus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tartarus: A Multi-Agent Platform for Integrating Cyber-Physical Systems and Robots</title>
+      <link>https://tushar-semwal.github.io/publication/10-1145-2783449-2783469/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/10-1145-2783449-2783469/</guid>
       <description></description>
     </item>
     
