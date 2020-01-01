@@ -74,9 +74,19 @@
   </url>
   
   <url>
+    <loc>https://tushar-semwal.github.io/project/tartarus/</loc>
+    <lastmod>2019-05-19T18:36:30+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tushar-semwal.github.io/project/</loc>
     <lastmod>2019-05-19T18:58:15+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/project/quadcopter-shukla/</loc>
+    <lastmod>2019-05-19T18:36:30+01:00</lastmod>
   </url>
   
   <url>
@@ -86,6 +96,12 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/tags/arduino/</loc>
+    <lastmod>2019-05-19T18:36:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/embedded/</loc>
     <lastmod>2019-05-19T18:58:15+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -93,6 +109,12 @@
   <url>
     <loc>https://tushar-semwal.github.io/tags/robotics/</loc>
     <lastmod>2019-05-19T18:58:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/softwares/</loc>
+    <lastmod>2019-05-19T18:36:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   

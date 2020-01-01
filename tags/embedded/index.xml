@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>embedded on Tushar Semwal</title>
+    <link>https://tushar-semwal.github.io/tags/embedded/</link>
+    <description>Recent content in embedded on Tushar Semwal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Sun, 19 May 2019 18:36:30 +0100</lastBuildDate>
+    
+	<atom:link href="https://tushar-semwal.github.io/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project Tartarus</title>
+      <link>https://tushar-semwal.github.io/project/tartarus/</link>
+      <pubDate>Sun, 19 May 2019 18:36:30 +0100</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/project/tartarus/</guid>
+      <description>Tartarus is a multi-agent emulator for Static as well as Mobile Agents.</description>
+    </item>
+    
+    <item>
+      <title>Ros Firebirdv</title>
+      <link>https://tushar-semwal.github.io/project/ros-firebirdv/</link>
+      <pubDate>Sun, 19 May 2019 18:36:30 +0100</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/project/ros-firebirdv/</guid>
+      <description>A ROS package for FirebirdV robot by Nex-Robotics (India).</description>
+    </item>
+    
+    <item>
+      <title>Arduino FirebirdV Extension</title>
+      <link>https://tushar-semwal.github.io/project/arduino-firebirdv-extension/</link>
+      <pubDate>Tue, 12 Mar 2019 18:18:17 +0100</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/project/arduino-firebirdv-extension/</guid>
+      <description>Extending Arduino IDE for FirebirdV robot by Nex-Robotics.</description>
+    </item>
+    
+  </channel>
+</rss>
