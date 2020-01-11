@@ -3,6 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tushar-semwal.github.io/categories/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/post/nanogateway-rpi3/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/embedded/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/categories/iot/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/iot/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/lopy/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tushar-semwal.github.io/tags/rpi/</loc>
+    <lastmod>2020-01-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://tushar-semwal.github.io/authors/tushar-semwal/</loc>
     <lastmod>2019-12-31T17:29:27+00:00</lastmod>
     <priority>0</priority>
@@ -62,18 +115,6 @@
   </url>
   
   <url>
-    <loc>https://tushar-semwal.github.io/tags/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://tushar-semwal.github.io/project/tartarus/</loc>
     <lastmod>2020-01-01T10:24:16+00:00</lastmod>
   </url>
@@ -96,12 +137,6 @@
   
   <url>
     <loc>https://tushar-semwal.github.io/tags/arduino/</loc>
-    <lastmod>2020-01-01T10:24:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/tags/embedded/</loc>
     <lastmod>2020-01-01T10:24:16+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -178,41 +213,6 @@
   <url>
     <loc>https://tushar-semwal.github.io/tags/mobile-agentssecurity-of-data/</loc>
     <lastmod>2019-12-31T17:30:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/categories/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/post/dnd-scraping-rvest-rselenium/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/categories/r/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/tags/dnd/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/tags/rselenium/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tushar-semwal.github.io/tags/rvest/</loc>
-    <lastmod>2020-01-11T20:45:10+00:00</lastmod>
     <priority>0</priority>
   </url>
   

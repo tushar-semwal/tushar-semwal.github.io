@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Tushar Semwal</title>
-    <link>https://tushar-semwal.github.io/post/</link>
-    <description>Recent content in Posts on Tushar Semwal</description>
+    <title>iot on Tushar Semwal</title>
+    <link>https://tushar-semwal.github.io/tags/iot/</link>
+    <description>Recent content in iot on Tushar Semwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; `{year}` Tushar Semwal</copyright>
+    <lastBuildDate>Sat, 11 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://tushar-semwal.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tushar-semwal.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
