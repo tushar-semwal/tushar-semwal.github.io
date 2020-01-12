@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="LoRa Gateway in a LoRaWAN network are devices/hardwares which connect an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3.">
+  <meta name="description" content="LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://tushar-semwal.github.io/post/nanogateway-rpi3/">
@@ -135,8 +135,8 @@
   
   <meta property="og:site_name" content="Tushar Semwal">
   <meta property="og:url" content="https://tushar-semwal.github.io/post/nanogateway-rpi3/">
-  <meta property="og:title" content="Setting up LoRaWAN Nanogateway using LoPy and RPi3 | Tushar Semwal">
-  <meta property="og:description" content="LoRa Gateway in a LoRaWAN network are devices/hardwares which connect an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3."><meta property="og:image" content="https://tushar-semwal.github.io/img/icon-192.png">
+  <meta property="og:title" content="Setting up Chirpstack.io LoRaWAN Nanogateway using LoPy and RPi3 | Tushar Semwal">
+  <meta property="og:description" content="LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3."><meta property="og:image" content="https://tushar-semwal.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-01-11T00:00:00&#43;00:00">
@@ -148,7 +148,7 @@
 
   
 
-  <title>Setting up LoRaWAN Nanogateway using LoPy and RPi3 | Tushar Semwal</title>
+  <title>Setting up Chirpstack.io LoRaWAN Nanogateway using LoPy and RPi3 | Tushar Semwal</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -438,7 +438,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Setting up LoRaWAN Nanogateway using LoPy and RPi3</h1>
+  <h1 itemprop="name">Setting up Chirpstack.io LoRaWAN Nanogateway using LoPy and RPi3</h1>
 
   
 
@@ -558,7 +558,21 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>LoRa Gateway in a LoRaWAN network are devices/hardwares which connect an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3.</p>
+      <p>LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sensing/client LoRa node to a wide network such as the internet or your local network. Though the full fledged LoRa gateways available on the market proivide advance features and capabilities, they are costly and and bulky. Today, I will share the steps and my experience in setting up a LoRa gateway using two palm-sized embedded systems - a LoPy and Raspberry Pi 3.</p>
+
+<p>The already available instructions on manufacturer site are designed to be used for The Things Network. This blog provide a minimum steps to setup a Chirpstack LoRaWAN server to which one have more control and is not connected to the internet.</p>
+
+<p>Let us first setup the LoPy. I am using a LoPy1.0 with expansion board 2.0 updated to firmware 1.16. <strong>Please update the LoPy before proceeding.</strong> We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.</p>
+
+<ol>
+<li><p>We need a Gateway ID which is unique to each LoPy device. Just run the following lines of code on the device through REPL command line interface (use ATOM editor).</p>
+
+<pre><code>from network import WLAN
+import ubinascii
+wl = WLAN()
+ubinascii.hexlify(wl.mac())[:6] + 'FFFE' + ubinascii.hexlify(wl.mac())[6:]
+</code></pre></li>
+</ol>
 
     </div>
 
