@@ -39,7 +39,19 @@ ubinascii.hexlify(wl.mac())[:6] + &#39;FFFE&#39; + ubinascii.hexlify(wl.mac())[6
 
 &lt;li&gt;&lt;p&gt;Create a project folder and copy these three files - &lt;a href=&#34;https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/main.py&#34; target=&#34;_blank&#34;&gt;main.py&lt;/a&gt;, &lt;a href=&#34;https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/config.py&#34; target=&#34;_blank&#34;&gt;config.py&lt;/a&gt;, and &lt;a href=&#34;https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/nanogateway.py&#34; target=&#34;_blank&#34;&gt;nanogateway.py&lt;/a&gt; inside the folder.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Open the project folder in ATOM and edit the &lt;code&gt;nanogateway.py&lt;/code&gt; file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the &lt;code&gt;nanogateway.py&lt;/code&gt; file which requires internet. Fortunately, there are not many line. Just comment out lines &lt;code&gt;145--149&lt;/code&gt; which show ntp_sync function calls.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open the project folder in ATOM and edit the &lt;code&gt;nanogateway.py&lt;/code&gt; file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the &lt;code&gt;nanogateway.py&lt;/code&gt; file which requires internet. Fortunately, there are not many line. Specifically, just comment out lines &lt;code&gt;145--149&lt;/code&gt; which show &lt;code&gt;ntp_sync&lt;/code&gt; function calls.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;main.py&lt;/code&gt;: Keep the file untouched.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;config.py&lt;/code&gt;: Enter the required fields,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SERVER = &amp;lsquo;IP of RPi access point&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;PORT = 1700&lt;/li&gt;
+&lt;li&gt;WIFI_SSID = &amp;lsquo;WIFI name created&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;WIFI_PASS = &amp;lsquo;WIFI password created&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;I am in Europe region and thus uncomment the lines for EU868 and comment for US915.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;

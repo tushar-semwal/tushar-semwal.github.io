@@ -579,7 +579,19 @@ ubinascii.hexlify(wl.mac())[:6] + 'FFFE' + ubinascii.hexlify(wl.mac())[6:]
 
 <li><p>Create a project folder and copy these three files - <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/main.py" target="_blank">main.py</a>, <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/config.py" target="_blank">config.py</a>, and <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/nanogateway.py" target="_blank">nanogateway.py</a> inside the folder.</p></li>
 
-<li><p>Open the project folder in ATOM and edit the <code>nanogateway.py</code> file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the <code>nanogateway.py</code> file which requires internet. Fortunately, there are not many line. Just comment out lines <code>145--149</code> which show ntp_sync function calls.</p></li>
+<li><p>Open the project folder in ATOM and edit the <code>nanogateway.py</code> file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the <code>nanogateway.py</code> file which requires internet. Fortunately, there are not many line. Specifically, just comment out lines <code>145--149</code> which show <code>ntp_sync</code> function calls.</p></li>
+
+<li><p><code>main.py</code>: Keep the file untouched.</p></li>
+
+<li><p><code>config.py</code>: Enter the required fields,</p>
+
+<ul>
+<li>SERVER = &lsquo;IP of RPi access point&rsquo;</li>
+<li>PORT = 1700</li>
+<li>WIFI_SSID = &lsquo;WIFI name created&rsquo;</li>
+<li>WIFI_PASS = &lsquo;WIFI password created&rsquo;</li>
+<li>I am in Europe region and thus uncomment the lines for EU868 and comment for US915.</li>
+</ul></li>
 
 <li></li>
 </ol>
