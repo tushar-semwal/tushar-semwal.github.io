@@ -26,21 +26,36 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 &lt;p&gt;The whole process has four stages:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Install Chirpstack stack on RPi3.&lt;/li&gt;
+&lt;li&gt;Install Chirpstack LoRaWAN stack on RPi3.&lt;/li&gt;
 &lt;li&gt;Create a wireless access point on the RPi3.&lt;/li&gt;
 &lt;li&gt;Setup the LoPy as nanogateway and adding it to Chirpstack server.&lt;/li&gt;
 &lt;li&gt;Add the end node to the Chirpstack server and test.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;###Pre-requisites&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pre-requisites&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;RPi3 with Raspbian installed and connected to a monitor. We need the screen at least during all the stages. However, once the whole setup is finished, you can use the system headless.&lt;/li&gt;
 &lt;li&gt;RPi3 connected to internet for update and downloading required packages.&lt;/li&gt;
 &lt;li&gt;Two LoPys with latest firmware. I am using 1.16.&lt;/li&gt;
+&lt;li&gt;Atom editor with pycom plugin to upload code to LoPy.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Let us first setup the LoPy. I am using a LoPy4.0 with expansion board 3.0 updated to firmware 1.16. &lt;strong&gt;Please update the LoPy before proceeding.&lt;/strong&gt; We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stage-1&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;sudo apt update&lt;/code&gt; &amp;amp; &lt;code&gt;sudo apt upgrade&lt;/code&gt; &amp;ndash; first update and then upgrade the Raspbian OS.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Follow the steps from here: &lt;a href=&#34;https://www.chirpstack.io/guides/debian-ubuntu/&#34; target=&#34;_blank&#34;&gt;https://www.chirpstack.io/guides/debian-ubuntu/&lt;/a&gt; and install the chirpstack.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Stage-2&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let us first setup the LoPy. I am using a LoPy4.0 with expansion board 3.0 updated to firmware 1.16. &lt;em&gt;Please update the LoPy before proceeding.&lt;/em&gt; We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.&lt;/p&gt;
 
 &lt;p&gt;I am using ATOM editor with a pycom plugin.&lt;/p&gt;
 
