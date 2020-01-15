@@ -589,15 +589,13 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 <li><p>Follow the steps from here: <a href="https://www.chirpstack.io/guides/debian-ubuntu/" target="_blank">https://www.chirpstack.io/guides/debian-ubuntu/</a> and install the chirpstack.</p></li>
 </ol>
 
-<p><em>Stage-2</em></p>
+<p><em>Step-2</em></p>
 
-<ol>
-<li>The RPi3 has an in-built WiFi chipset which can be converted into an access point to which other WiFi-enabled devices can connect (for e.g., LoPy). Use,</li>
-</ol>
+<p>The RPi3 has an in-built WiFi chipset which can be converted into an access point to which other WiFi-enabled devices can connect (for e.g., LoPy). U</p>
 
-<p><code>sudo apt install dnsmasq hostapd</code></p>
+<p>Follow the steps in this tutorial:  <a href="https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md" target="_blank">Setting up a Raspberry Pi as an access point in a standalone network (NAT)</a>. No need to follow the steps for sharing internet, we dont need it.</p>
 
-<p><code>Note</code>: <em>Internet will be disabled if Pi is used as an access point, though there is a solution which is not covered in this post.</em></p>
+<p><em>Step-3</em></p>
 
 <p>Let us first setup the LoPy. I am using a LoPy4.0 with expansion board 3.0 updated to firmware 1.16. <em>Please update the LoPy before proceeding.</em> We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.</p>
 
