@@ -569,7 +569,7 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 <li>Install Chirpstack LoRaWAN stack on RPi3.</li>
 <li>Create a wireless access point on the RPi3.</li>
 <li>Setup the LoPy as nanogateway and adding it to Chirpstack server.</li>
-<li>Add the end node to the Chirpstack server and test.</li>
+<li>Registering the Nanogateway and client LoPy node with Chirpstack server.</li>
 </ol>
 
 <p><em>Pre-requisites</em></p>
@@ -599,10 +599,8 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 
 <p>I am using a LoPy4.0 with expansion board 3.0 updated to firmware 1.16. <em>Please update the LoPy before proceeding.</em> We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.</p>
 
-<p>I am using ATOM editor with a pycom plugin.</p>
-
 <ol>
-<li><p>We need a Gateway ID which is unique to each LoPy device. Just run the following lines of code on the device through REPL command line interface (use ATOM editor).</p>
+<li><p>We need a Gateway ID which is unique to each LoPy device. Just run the following lines of code on the device through REPL command line interface (use ATOM editor with pycom plugin).</p>
 
 <pre><code>from network import WLAN
 import ubinascii
@@ -614,21 +612,27 @@ ubinascii.hexlify(wl.mac())[:6] + 'FFFE' + ubinascii.hexlify(wl.mac())[6:]
 
 <li><p>Create a project folder and copy these three files - <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/main.py" target="_blank">main.py</a>, <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/config.py" target="_blank">config.py</a>, and <a href="https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/nanogateway.py" target="_blank">nanogateway.py</a> inside the folder.</p></li>
 
-<li><p>Open the project folder in ATOM and edit the <code>nanogateway.py</code> file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the <code>nanogateway.py</code> file which requires internet. Fortunately, there are not many line. Specifically, just comment out lines <code>145--149</code> which show <code>ntp_sync</code> function calls.</p></li>
+<li><p>Open the project folder in ATOM and edit the <code>nanogateway.py</code> file. Since I am on an eduroam network, it is difficult to setup internet. Thus, we will remove any lines of code in the <code>nanogateway.py</code> file which requires internet. Fortunately, there are not many lines. Specifically, just comment out lines <code>145--149</code> which have <code>ntp_sync</code> function calls.</p></li>
 
 <li><p><code>main.py</code>: Keep the file untouched.</p></li>
 
 <li><p><code>config.py</code>: Enter the required fields,</p>
 
 <ul>
-<li>SERVER = &lsquo;IP of RPi access point&rsquo;</li>
+<li>SERVER = &lsquo;IP of RPi access point entered in Step-2&rsquo;</li>
 <li>PORT = 1700</li>
-<li>WIFI_SSID = &lsquo;WIFI name created&rsquo;</li>
-<li>WIFI_PASS = &lsquo;WIFI password created&rsquo;</li>
+<li>WIFI_SSID = &lsquo;WIFI name created in Step-2&rsquo;</li>
+<li>WIFI_PASS = &lsquo;WIFI password created in Step-2&rsquo;</li>
 <li>I am in Europe region and thus uncomment the lines for EU868 and comment for US915.</li>
 </ul></li>
+</ol>
 
-<li></li>
+<p><em>Step-4</em></p>
+
+<p>Now we need to register both the Nanogateway and the client LoPy node on the Chirpstack server. This step is important in order to create and join the LoRaWAN network.</p>
+
+<ol>
+<li>Follow this youtube <a href="https://youtu.be/mkuS5QUj5Js?t=285" target="_blank">video</a> from time=04:45.</li>
 </ol>
 
     </div>
