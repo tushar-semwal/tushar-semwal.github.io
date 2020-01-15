@@ -23,7 +23,7 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 
 &lt;p&gt;The already available instructions on manufacturer site are designed to be used for The Things Network. This blog provide a minimum steps to setup a Chirpstack LoRaWAN server to which one have more control and is not connected to the internet.&lt;/p&gt;
 
-&lt;p&gt;The whole process has four stages:&lt;/p&gt;
+&lt;p&gt;The whole process has four major steps:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Install Chirpstack LoRaWAN stack on RPi3.&lt;/li&gt;
@@ -41,7 +41,7 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 &lt;li&gt;Atom editor with pycom plugin to upload code to LoPy.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;Stage-1&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Step-1&lt;/em&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;sudo apt update&lt;/code&gt; &amp;amp; &lt;code&gt;sudo apt upgrade&lt;/code&gt; &amp;ndash; first update and then upgrade the Raspbian OS.&lt;/p&gt;&lt;/li&gt;
@@ -52,8 +52,12 @@ LoRa Gateway in a LoRaWAN network is a device/hardware which connects an end sen
 &lt;p&gt;&lt;em&gt;Stage-2&lt;/em&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;The RPi3 has an in-built WiFi chipset which can be converted into an access point to which other WiFi-enabled devices can connect (for e.g., LoPy). Use,&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt install dnsmasq hostapd&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Note&lt;/code&gt;: &lt;em&gt;Internet will be disabled if Pi is used as an access point, though there is a solution which is not covered in this post.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Let us first setup the LoPy. I am using a LoPy4.0 with expansion board 3.0 updated to firmware 1.16. &lt;em&gt;Please update the LoPy before proceeding.&lt;/em&gt; We will use the nano-gateway code provided by pycom. There are a total of 3 files - main.py, config.py, and nanogateway.py.&lt;/p&gt;
 
