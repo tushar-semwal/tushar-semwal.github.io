@@ -98,6 +98,15 @@ ubinascii.hexlify(wl.mac())[:6] + &#39;FFFE&#39; + ubinascii.hexlify(wl.mac())[6
     </item>
     
     <item>
+      <title>Robots in the Danger Zone: Exploring Public Perception through Engagement</title>
+      <link>https://tushar-semwal.github.io/publication/robb-2020-robots/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tushar-semwal.github.io/publication/robb-2020-robots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A decentralized Artificial Immune System for solution selection in Cyber–Physical Systems</title>
       <link>https://tushar-semwal.github.io/publication/semwal-2020105920/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
