@@ -85,6 +85,8 @@ ubinascii.hexlify(wl.mac())[:6] + &#39;FFFE&#39; + ubinascii.hexlify(wl.mac())[6
 &lt;li&gt;WIFI_PASS = &amp;lsquo;WIFI password created in Step-2&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;I am in Europe region and thus uncomment the lines for EU868 and comment for US915.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Upload the project into the LoPy using Atom.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;em&gt;Step-4&lt;/em&gt;&lt;/p&gt;
@@ -92,8 +94,17 @@ ubinascii.hexlify(wl.mac())[:6] + &#39;FFFE&#39; + ubinascii.hexlify(wl.mac())[6
 &lt;p&gt;Now we need to register both the Nanogateway and the client LoPy node on the Chirpstack server. This step is important in order to create and join the LoRaWAN network.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Follow this youtube &lt;a href=&#34;https://youtu.be/mkuS5QUj5Js?t=285&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; from time=04:45.&lt;/li&gt;
+&lt;li&gt;Follow this youtube &lt;a href=&#34;https://youtu.be/mkuS5QUj5Js?t=285tea&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; from time=04:45.&lt;/li&gt;
+&lt;li&gt;The gateway, service, device and application profiles should be created by now.&lt;/li&gt;
+&lt;li&gt;Now keep the RPi and the LoPy with the nanogateway code together.&lt;/li&gt;
+&lt;li&gt;The nanogateway should now be able to connect to the RPi hotspot and thus they are on the same network. In principle, whatever the data packet nanogateway receives from the client LoPy node, will be forwarded to the Chirpstack server running on the RPi.&lt;/li&gt;
+&lt;li&gt;At the client node side: Upload the code from &lt;a href=&#34;https://github.com/pycom/pycom-libraries/blob/master/examples/lorawan-nano-gateway/otaa_node.py&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; into another LoPy which will act as a clinet node.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;##Conclusions
+If everything is setup fine, you should be able to see the packets received at the RPi side. I hope this tutorial helps any enthusiast and hacker out there.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
 </description>
     </item>
     
