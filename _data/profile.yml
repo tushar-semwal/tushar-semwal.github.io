@@ -3,65 +3,79 @@ secondary_name: ""
 navbar_name: "dr tushar semwal"
 
 positions:
-- logo: /assets/images/badges/msft-logo.jpg  # Logo is optional
-  name: Senior Applied Scientist @ Microsoft Copilot
-# - name: Position 2 without logo
+- name: Lead Data Scientist @ Presight (G42), Abu Dhabi
 
 
 email: "tusharsemwal@outlook.com"
-# cv_link: link-to-your-cv-file
-gscholar: S8QouS0AAAAJ  # This is an example, replace it with your own Google Scholar ID
+cv_link: /assets/pdf/TusharSemwal_UAE_Forward_25-3.pdf
+gscholar: S8QouS0AAAAJ
 github: tushar-semwal
-# twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 linkedin: tusharsemwal
-# orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: true
 short_bio: >-
   <p>
-    Senior Applied Scientist at Microsoft India, specializing in Large and Small Language Model training for real-world industry applications.<br><br>
-    I drive innovations in Graph Intelligence, Ranking, and Recommendations using cutting-edge machine learning.<br><br>
-    PhD from IIT Guwahati, with research experience at The University of Edinburgh.
+    Lead Data Scientist at <strong>Presight (G42)</strong>, Abu Dhabi — an ADX-listed AI and decision intelligence company. Leading agentic systems, multi-agent orchestration, and LLM-based tool development across Legal, Energy, and enterprise domains.<br><br>
+    My work sits at the intersection of <strong>research and production</strong>: LLM fine-tuning, RAG, knowledge graphs, hallucination control, and decision-boundary problems in low-resource agentic settings. I care about research that survives contact with real systems.<br><br>
+    Previously at <strong>UNEY</strong> (Dubai), <strong>Microsoft Copilot</strong> (Principal Applied Scientist), <strong>Mobius Labs</strong> (Berlin), and <strong>The University of Edinburgh</strong> (Research Associate).<br><br>
+    PhD in Distributed Machine Learning from <strong>IIT Guwahati</strong>. 20+ publications · 84+ citations on top paper · Google Scholar <a href="https://scholar.google.com/citations?user=S8QouS0AAAAJ" target="_blank">profile</a>.
   </p>
 
-portrait_url: /assets/images/photos/tushar-pic.jpeg
-# portrait_caption: >-
-#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_url: /assets/images/photos/tushar-cartoon.png
 
 
 experience:
+- name: Presight (G42)
+  position: Lead Data Scientist
+  date: Mar 2026 – Present
+- name: UNEY
+  position: Senior Applied Scientist
+  date: Jul 2025 – Mar 2026
 - name: Microsoft
   logo: /assets/images/badges/msft-logo.jpg
-  position: Senior Applied Scientist
-  date: May 2021 - present
-- name: Mobius Labs
+  position: Principal Applied Scientist
+  date: May 2021 – Jul 2025
+- name: Mobius Labs GmbH
   logo: /assets/images/badges/mobius-logo-canva.png
-  position: ML Scientist
-  date: Jan 2021 - May 2021
+  position: Machine Learning Scientist
+  date: Jan 2021 – May 2021
 - name: The University of Edinburgh
   logo: /assets/images/badges/uoe.jpeg
-  position: Research Associate
-  date: Jan 2019 - Jan 2021
+  position: Research Associate (Energy Sector)
+  date: Jan 2019 – Jan 2021
+- name: OpenMined
+  position: Research Scientist (Open Source)
+  date: Mar 2020 – Jan 2021
+- name: Samsung Research Institute, Bengaluru
+  position: Research Intern (Bixby Team)
+  date: Jun 2017 – Sep 2017
 
 education:
 - name: Indian Institute of Technology Guwahati
   logo: /assets/images/badges/IITG_logo.png
-  position: >- 
-   PhD in Distributed and Privacy-aware Machine Learning
-  date: July. 2015 - Jan 2019
+  position: PhD — Distributed Machine Learning
+  date: 2015 – 2019
 - name: Indian Institute of Technology Guwahati
   logo: /assets/images/badges/IITG_logo.png
-  position: Masters in Computer Science and Engineering
-  date: July 2013 - June 2015
+  position: MTech — Computer Science and Engineering
+  date: 2013 – 2015
+- name: College of Engineering Roorkee
+  position: BTech — Electronics and Telecommunication Engineering
+  date: 2009 – 2013
 
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Microsoft Global Hackathon Winner (international & country regions)
+  date: 2022
+- name: Covid-19 Medal Award — University of Edinburgh
+  date: 2022
+- name: Coverage in a leading Scottish newspaper for applied ML work
+  date: 2022
+- name: Microsoft Travel Grant — SDM 2018, San Diego
+  date: 2018
+- name: DST SERB Travel Grant — SDM 2018
+  date: 2018
+- name: Travel Grant — AAMAS Summer School on Multi-Agent Systems
+  date: 2016
+- name: TCS Research Fellowship (4-year national industrial award)
+  date: 2015
