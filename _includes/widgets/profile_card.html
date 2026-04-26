@@ -58,14 +58,22 @@
 
           </div>
 
-          <!-- Right: photo (desktop only) -->
-          {% if site.data.profile.portrait_url %}
+          <!-- Right: pixel lens photo (desktop only) -->
           <div class="col-md-4 text-center d-none d-md-flex align-items-center justify-content-center">
-            <img src="{{ site.data.profile.portrait_url | relative_url }}"
-                 alt="{{ site.data.profile.primary_name }}"
-                 style="height:210px; border-radius:14px; border:2px solid rgba(0,229,204,0.45); box-shadow:0 0 40px rgba(0,229,204,0.2);">
+            <div id="lens-container" style="position:relative; display:inline-block; cursor:crosshair; border-radius:14px; overflow:hidden; border:2px solid rgba(0,229,204,0.45); box-shadow:0 0 40px rgba(0,229,204,0.2);">
+              <!-- Bottom layer: original clear photo -->
+              <img src="/assets/images/photos/tushar-pic.jpeg"
+                   alt="{{ site.data.profile.primary_name }}"
+                   style="height:210px; display:block;">
+              <!-- Top layer: pixel art with circular mask hole at cursor -->
+              <img id="pixel-overlay"
+                   src="/assets/images/photos/tushar-pixel.png"
+                   alt=""
+                   style="position:absolute; top:0; left:0; height:210px; pointer-events:none;
+                          -webkit-mask-image: radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px);
+                          mask-image: radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px);">
+            </div>
           </div>
-          {% endif %}
 
         </div>
 
@@ -139,5 +147,27 @@
     setTimeout(tick, delay);
   }
   tick();
+})();
+
+// Pixel lens reveal
+(function () {
+  var container = document.getElementById("lens-container");
+  var overlay = document.getElementById("pixel-overlay");
+  if (!container || !overlay) return;
+  var R = 58; // reveal circle radius in px
+  function setMask(x, y) {
+    var m = "radial-gradient(circle " + R + "px at " + x + "px " + y + "px, transparent 0%, transparent " + (R - 6) + "px, black " + R + "px)";
+    overlay.style.webkitMaskImage = m;
+    overlay.style.maskImage = m;
+  }
+  container.addEventListener("mousemove", function (e) {
+    var rect = container.getBoundingClientRect();
+    setMask(e.clientX - rect.left, e.clientY - rect.top);
+  });
+  container.addEventListener("mouseleave", function () {
+    var m = "radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px)";
+    overlay.style.webkitMaskImage = m;
+    overlay.style.maskImage = m;
+  });
 })();
 </script>
