@@ -1,121 +1,143 @@
-<div class="row">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-5">
-                <div class="row">
-                    <div class="col">
-                        {% if site.data.profile.portrait_url %}
-                        <!-- When the screen is wider than md, float the portrait on the right -->
-                        <div class="figure float-right ml-4 mb-4 d-none d-md-block">
-                            <img 
-                                src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 200px;"
-                                data-toggle="tooltip" 
-                                data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
-                        </div>
-                        {% endif %}
+<style>
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.tw-cursor { animation: blink 1s step-start infinite; color:#00e5cc; }
+</style>
 
-                        <div class="d-flex">
-                            <div class="h1 font-weight-normal">
-                                {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
-                            </div>
-                            {% if site.data.profile.portrait_url %}
-                            <div class="ml-auto d-md-none">
-                                <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
-                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 48px;" alt="Portrait">
-                                </a>
-                            </div>
-                            {% endif %}
-                        </div>
-                        <div class="text-profile-position">
-                            {% for position in site.data.profile.positions %}
-                            {% if position.logo -%}
-                            <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
-                            {%- endif %}
-                            {{ position.name }}<br/>
-                            {% endfor %}
-                        </div>
-                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
-                            {{ site.data.profile.short_bio }}
-                        </div>
-                        {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                        {% endif %}
-                    </div>
-        
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col">
-                        <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
-                        </a>
+<div class="row mb-3">
+  <div class="col">
+    <div class="border-0" style="background:linear-gradient(135deg,#0d1117 0%,#1a2744 55%,#0d2137 100%); border-radius:16px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.35);">
+      <div class="p-4 p-md-5">
 
-                        {% if site.data.profile.gscholar %}
-                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                        {%- assign gscholar_url = site.data.profile.gscholar -%}
-                        {%- else -%}
-                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                        {%- endif -%}
-                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
-                            <i class="fab fa-google-scholar"></i> Google Scholar
-                        </a>
-                        {% endif %}
-                        
-                        {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        {% endif %}
+        <!-- Top row: text + photo -->
+        <div class="row align-items-center">
 
-                        {% if site.data.profile.wechat_qrcode %}
-                        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
-                            <i class="fab fa-weixin"></i> WeChat
-                        </a>
-                        {% endif %}
+          <!-- Left: name, tagline, position, bio, CV -->
+          <div class="col-md-8">
 
-                        {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.orcid %}
-                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                            <i class="fab fa-orcid"></i> ORCID
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-</div>
-
-{% if site.data.profile.wechat_qrcode %}
-<div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
-            </div>
-            {% if site.data.profile.wechat_prompt %}
-            <div class="modal-body p-1">
-                {{ site.data.profile.wechat_prompt }}
+            <!-- Mobile photo -->
+            {% if site.data.profile.portrait_url %}
+            <div class="d-flex align-items-center mb-3 d-md-none">
+              <img src="{{ site.data.profile.portrait_url | relative_url }}"
+                   alt="{{ site.data.profile.primary_name }}"
+                   style="height:64px; border-radius:10px; border:2px solid rgba(0,229,204,0.5); box-shadow:0 0 16px rgba(0,229,204,0.25); margin-right:1rem;">
+              <h2 style="color:#fff; font-weight:300; margin:0;">{{ site.data.profile.primary_name }}</h2>
             </div>
             {% endif %}
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+            <!-- Desktop name -->
+            <h1 class="d-none d-md-block" style="color:#fff; font-weight:300; margin-bottom:0.25rem;">
+              {{ site.data.profile.primary_name }}
+            </h1>
+
+            <!-- Typewriter tagline -->
+            <div style="font-size:1.05rem; font-weight:500; height:1.8rem; margin-bottom:1rem;">
+              <span id="typewriter" style="color:#00e5cc;"></span><span class="tw-cursor" style="color:#00e5cc;">|</span>
             </div>
+
+            <!-- Position -->
+            <div style="color:#90cdf4; font-size:0.88rem; margin-bottom:1.1rem;">
+              {% for position in site.data.profile.positions %}
+                {{ position.name }}<br/>
+              {% endfor %}
+            </div>
+
+            <!-- Bio -->
+            <div style="color:#cbd5e0; font-size:0.85rem; line-height:1.75; text-align:justify;">
+              {{ site.data.profile.short_bio }}
+            </div>
+
+            <!-- CV -->
+            {% if site.data.profile.cv_link %}
+            <div class="mt-3">
+              <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"
+                 style="color:#00e5cc; font-size:0.88rem;">
+                <i class="fas fa-file-alt"></i> Curriculum Vitae
+              </a>
+            </div>
+            {% endif %}
+
+          </div>
+
+          <!-- Right: photo (desktop only) -->
+          {% if site.data.profile.portrait_url %}
+          <div class="col-md-4 text-center d-none d-md-flex align-items-center justify-content-center">
+            <img src="{{ site.data.profile.portrait_url | relative_url }}"
+                 alt="{{ site.data.profile.primary_name }}"
+                 style="height:210px; border-radius:14px; border:2px solid rgba(0,229,204,0.45); box-shadow:0 0 40px rgba(0,229,204,0.2);">
+          </div>
+          {% endif %}
+
         </div>
+
+        <!-- Stats strip -->
+        <div class="row mt-4 pt-3 text-center" style="border-top:1px solid rgba(255,255,255,0.1);">
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <div style="color:#00e5cc; font-size:2rem; font-weight:700; line-height:1;">20+</div>
+            <div style="color:#718096; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Publications</div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <div style="color:#00e5cc; font-size:2rem; font-weight:700; line-height:1;">200+</div>
+            <div style="color:#718096; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Citations</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div style="color:#00e5cc; font-size:2rem; font-weight:700; line-height:1;">8+</div>
+            <div style="color:#718096; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Years Research</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div style="color:#00e5cc; font-size:2rem; font-weight:700; line-height:1;">3</div>
+            <div style="color:#718096; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Continents</div>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="mt-3" style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1rem;">
+          <a class="pr-3" href="mailto:{{ site.data.profile.email | encode_email }}" style="color:#718096; font-size:0.85rem;">
+            <i class="fas fa-at"></i> {{ site.data.profile.email | replace: "@", "(at)" }}
+          </a>
+          {% if site.data.profile.gscholar %}
+          {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+          <a class="pr-3" target="_blank" href="{{ gscholar_url }}" style="color:#718096; font-size:0.85rem;">
+            <i class="fab fa-google-scholar"></i> Scholar
+          </a>
+          {% endif %}
+          {% if site.data.profile.github %}
+          <a class="pr-3" target="_blank" href="https://github.com/{{ site.data.profile.github }}" style="color:#718096; font-size:0.85rem;">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          {% endif %}
+          {% if site.data.profile.linkedin %}
+          <a class="pr-3" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" style="color:#718096; font-size:0.85rem;">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          {% endif %}
+        </div>
+
+      </div>
     </div>
+  </div>
 </div>
-{% endif %}
+
+<script>
+(function () {
+  var phrases = [
+    "Building Agentic AI Systems",
+    "LLM Fine-tuning & RAG",
+    "Federated Learning Research",
+    "Multi-Agent Orchestration",
+    "Hallucination Control at Scale"
+  ];
+  var i = 0, j = 0, deleting = false;
+  var el = document.getElementById("typewriter");
+  if (!el) return;
+  function tick() {
+    var phrase = phrases[i];
+    el.textContent = phrase.slice(0, j);
+    var delay = deleting ? 35 : 75;
+    if (!deleting && j === phrase.length) { delay = 2000; deleting = true; }
+    else if (deleting && j === 0) { deleting = false; i = (i + 1) % phrases.length; delay = 400; j = 0; tick(); return; }
+    deleting ? j-- : j++;
+    setTimeout(tick, delay);
+  }
+  tick();
+})();
+</script>
