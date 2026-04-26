@@ -1,59 +1,59 @@
 {% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
-    <h6 class="border-bottom border-gray p-3 mb-0">
+<div class="my-3 bg-white shadow-sm" style="border-radius:12px; overflow:hidden;">
+
+    <h5 class="border-bottom border-gray p-3 mb-0" style="font-size:1rem;">
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Publications{% endif %}
-        <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
-    </h6>
-    <div class="row no-gutters p-2">
+        <a href="{{ 'publications' | relative_url }}" style="font-size:0.8rem; font-weight:400;">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h5>
+
+    <div class="p-3">
         {% for item in publications limit:include.limit %}
-        <div class="col-md-6 p-2">
-            <div class="card h-100 border-0" style="border-radius:10px; overflow:hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+        <div class="d-flex flex-column flex-md-row mb-3"
+             style="border-radius:10px; overflow:hidden; box-shadow:0 2px 14px rgba(0,0,0,0.09); background:#fff; min-height:200px;">
 
-                <!-- Cover image — tall, full-width -->
+            <!-- Cover image — left on desktop, top on mobile -->
+            <div style="flex:0 0 300px; max-width:300px; min-height:200px; background:#e8e8e8; overflow:hidden;">
                 {%- if item.cover -%}
-                <div style="height:210px; overflow:hidden; background:#f0f0f0;">
-                    <img data-src="{{ item.cover | relative_url }}"
-                         alt="{{ item.title }}"
-                         class="lazy w-100"
-                         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-                         style="height:210px; object-fit:cover; object-position:center top;">
-                </div>
+                <img src="{{ item.cover | relative_url }}"
+                     alt="{{ item.title }}"
+                     style="width:300px; height:100%; min-height:200px; object-fit:cover; object-position:center top;">
                 {%- else -%}
-                <div style="height:210px; overflow:hidden; background:#e8e8e8;">
-                    <svg class="bubble-visual-hash lazy w-100" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 210" style="height:210px;"></svg>
-                </div>
+                <svg class="bubble-visual-hash w-100" data-bubble-visual-hash="{{ item.id }}"
+                     viewBox="0 0 300 200" style="min-height:200px;"></svg>
                 {%- endif -%}
+            </div>
 
-                <div class="card-body px-3 pt-3 pb-2">
-                    <!-- Venue badge — prominent -->
+            <!-- Content -->
+            <div class="p-4 d-flex flex-column justify-content-between" style="flex:1;">
+                <div>
+                    <!-- Venue + year + badge -->
                     <div class="mb-2">
-                        <span style="font-size:0.72rem; font-weight:700; letter-spacing:0.03em; color:#fff; background:#2c5282; border-radius:4px; padding:2px 8px; display:inline-block;">
+                        <span style="font-size:0.74rem; font-weight:700; letter-spacing:0.03em; color:#fff; background:#2c5282; border-radius:4px; padding:3px 10px; display:inline-block;">
                             {{ item.pub }}
                         </span>
-                        <span style="font-size:0.72rem; color:#666; margin-left:4px;">{{ item.pub_date }}</span>
+                        <span style="font-size:0.74rem; color:#888; margin-left:6px;">{{ item.pub_date }}</span>
                         {% if item.pub_last %}{{ item.pub_last }}{% endif %}
                     </div>
 
-                    <!-- Title -->
-                    <h6 class="mb-2" style="font-size:0.92rem; font-weight:700; line-height:1.45; color:#1a202c;">
+                    <!-- Title — bigger -->
+                    <h5 style="font-size:1.08rem; font-weight:700; line-height:1.4; color:#1a202c; margin-bottom:0.6rem;">
                         {{ item.title }}
-                    </h6>
+                    </h5>
 
-                    <!-- Practical gist -->
-                    <p class="text-muted mb-2" style="font-size:0.80rem; line-height:1.55;">
+                    <!-- Abstract — clamped to 3 lines -->
+                    <p style="font-size:0.9rem; line-height:1.65; color:#4a5568; margin-bottom:0.75rem;
+                               display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
                         {{ item.abstract }}
-                    </p>
-
-                    <!-- Authors -->
-                    <p class="mb-0" style="font-size:0.75rem; color:#555;">
-                        {% include widgets/author_list.html authors=item.authors %}
                     </p>
                 </div>
 
-                <!-- Links footer -->
-                {% if item.links %}
-                <div class="px-3 pb-3 pt-1">
-                    <p class="mb-0" style="font-size:0.78rem;">
+                <!-- Authors + links -->
+                <div>
+                    <p style="font-size:0.78rem; color:#718096; margin-bottom:0.5rem;">
+                        {% include widgets/author_list.html authors=item.authors %}
+                    </p>
+                    {% if item.links %}
+                    <p style="font-size:0.83rem; margin:0;">
                         {% for link in item.links %}
                             {% if link[1].url %}
                             <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}" class="mr-2">[{{ link[0] }}]</a>
@@ -62,14 +62,18 @@
                             {% endif %}
                         {% endfor %}
                     </p>
+                    {% endif %}
                 </div>
-                {% endif %}
-
             </div>
+
         </div>
         {% endfor %}
     </div>
-    <h6 class="d-block p-3 pt-0 mt-0 text-right border-top border-gray">
-        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
-    </h6>
+
+    <div class="p-3 pt-0 text-right border-top border-gray">
+        <a href="{{ 'publications' | relative_url }}" style="font-size:0.88rem;">
+            All publications <i class="fas fa-angle-double-right"></i>
+        </a>
+    </div>
+
 </div>
