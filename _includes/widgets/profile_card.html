@@ -65,17 +65,17 @@
               <div id="lens-hint" style="position:absolute; bottom:0; left:0; right:0; z-index:10; background:rgba(0,0,0,0.55); backdrop-filter:blur(3px); color:#00e5cc; font-size:0.7rem; font-weight:600; letter-spacing:0.08em; text-align:center; padding:5px 0; pointer-events:none; transition:opacity 0.3s;">
                 ✦ HOVER TO SEE ME ✦
               </div>
-              <!-- Bottom layer: original clear photo -->
-              <img src="/assets/images/photos/tushar-pic.jpeg"
+              <!-- Bottom layer: pixel art (always visible) -->
+              <img src="/assets/images/photos/tushar-pixel.png"
                    alt="{{ site.data.profile.primary_name }}"
                    style="height:210px; display:block;">
-              <!-- Top layer: pixel art with circular mask hole at cursor -->
-              <img id="pixel-overlay"
-                   src="/assets/images/photos/tushar-pixel.png"
+              <!-- Top layer: original photo, clipped to circle at cursor (hidden by default) -->
+              <img id="clear-overlay"
+                   src="/assets/images/photos/tushar-pic.jpeg"
                    alt=""
                    style="position:absolute; top:0; left:0; height:210px; pointer-events:none;
-                          -webkit-mask-image: radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px);
-                          mask-image: radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px);">
+                          clip-path: circle(0px at 50% 50%);
+                          transition: clip-path 0.05s ease;">
             </div>
           </div>
 
@@ -156,24 +156,19 @@
 // Pixel lens reveal
 (function () {
   var container = document.getElementById("lens-container");
-  var overlay = document.getElementById("pixel-overlay");
-  if (!container || !overlay) return;
-  var R = 58; // reveal circle radius in px
-  function setMask(x, y) {
-    var m = "radial-gradient(circle " + R + "px at " + x + "px " + y + "px, transparent 0%, transparent " + (R - 6) + "px, black " + R + "px)";
-    overlay.style.webkitMaskImage = m;
-    overlay.style.maskImage = m;
-  }
+  var overlay = document.getElementById("clear-overlay");
   var hint = document.getElementById("lens-hint");
+  if (!container || !overlay) return;
+  var R = 58;
   container.addEventListener("mousemove", function (e) {
     var rect = container.getBoundingClientRect();
-    setMask(e.clientX - rect.left, e.clientY - rect.top);
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    overlay.style.clipPath = "circle(" + R + "px at " + x + "px " + y + "px)";
     if (hint) hint.style.opacity = "0";
   });
   container.addEventListener("mouseleave", function () {
-    var m = "radial-gradient(circle 0px at -999px -999px, transparent 0%, black 1px)";
-    overlay.style.webkitMaskImage = m;
-    overlay.style.maskImage = m;
+    overlay.style.clipPath = "circle(0px at 50% 50%)";
     if (hint) hint.style.opacity = "1";
   });
 })();
